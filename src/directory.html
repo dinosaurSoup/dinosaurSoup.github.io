@@ -3,6 +3,6 @@ title: Directory
 permalink: "/directory.html"
 identifier: directory
 ---
-{% for page in collections.page | sort(attribute="data.title", case_sensitive=true) %}
+{% for page in collections.page | sort(attribute="data.name", case_sensitive=true) %}
 <p><a href="{{ page.url }}">{{ page.data.name }}</a></p>
 {% endfor %}

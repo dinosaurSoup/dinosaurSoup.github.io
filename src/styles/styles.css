@@ -124,13 +124,9 @@ h3, h4 {
 
 .gal-prev, .gal-next {
     cursor: pointer;
-    padding: 16px;
-    color: var(--off-black);
-    font-weight: bold;
-    font-size: 18px;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
     user-select: none;
+    padding: 5px;
 }
 
 .gal-prev {
@@ -138,13 +134,19 @@ h3, h4 {
 }
 
 .gal-next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
     grid-area: rarrow;
 }
 
 .gal-prev:hover, .gal-next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(147,105,57,0.8);
+}
+
+.gal-larrow, .gal-rarrow {
+    width: 40px;
+}
+
+.gal-larrow {
+    transform: scaleX(-1);
 }
 
 .gal-number {
